@@ -1,0 +1,223 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 224 71% 4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 71% 4%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71% 4%;
+
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 0 72% 51%;
+
+    /* Emergency Theme Colors */
+    --emergency: 0 72% 51%;
+    --emergency-foreground: 0 0% 98%;
+    
+    --warning: 25 95% 53%;
+    --warning-foreground: 0 0% 98%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    
+    --info: 217 91% 60%;
+    --info-foreground: 0 0% 98%;
+
+    /* Gradients */
+    --gradient-emergency: linear-gradient(135deg, hsl(0 72% 51%), hsl(25 95% 53%));
+    --gradient-safety: linear-gradient(135deg, hsl(142 76% 36%), hsl(160 84% 39%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%), hsl(142 76% 36%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 98%), hsl(220 14.3% 95.9%));
+    --gradient-warning: linear-gradient(135deg, hsl(25 95% 53%), hsl(45 93% 47%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(160 84% 39%));
+    
+    /* Shadows */
+    --shadow-emergency: 0 10px 30px -10px hsl(0 72% 51% / 0.3);
+    --shadow-card: 0 4px 12px -2px hsl(220 13% 91% / 0.4);
+    --shadow-glow: 0 0 20px hsl(0 72% 51% / 0.2);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 210 20% 98%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 210 20% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 210 20% 98%;
+
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 0 72% 51%;
+
+    /* Emergency Theme Colors - Dark Mode */
+    --emergency: 0 72% 51%;
+    --emergency-foreground: 0 0% 98%;
+    
+    --warning: 25 95% 53%;
+    --warning-foreground: 0 0% 98%;
+    
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 98%;
+    
+    --info: 217 91% 60%;
+    --info-foreground: 0 0% 98%;
+
+    /* Gradients - Dark Mode */
+    --gradient-emergency: linear-gradient(135deg, hsl(0 72% 51%), hsl(25 95% 53%));
+    --gradient-safety: linear-gradient(135deg, hsl(142 76% 36%), hsl(160 84% 39%));
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 60%), hsl(142 76% 36%));
+    --gradient-subtle: linear-gradient(180deg, hsl(224 71% 4%), hsl(215 27.9% 16.9%));
+    --gradient-warning: linear-gradient(135deg, hsl(25 95% 53%), hsl(45 93% 47%));
+    --gradient-success: linear-gradient(135deg, hsl(142 76% 36%), hsl(160 84% 39%));
+    
+    /* Shadows - Dark Mode */
+    --shadow-emergency: 0 10px 30px -10px hsl(0 72% 51% / 0.5);
+    --shadow-card: 0 4px 12px -2px hsl(0 0% 0% / 0.4);
+    --shadow-glow: 0 0 20px hsl(0 72% 51% / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+  
+  .bg-gradient-emergency {
+    background: var(--gradient-emergency);
+  }
+  
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-warning {
+    background: var(--gradient-warning);
+  }
+  
+  .bg-gradient-success {
+    background: var(--gradient-success);
+  }
+  
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .shadow-emergency {
+    box-shadow: var(--shadow-emergency);
+  }
+  
+  .animate-pulse-emergency {
+    animation: pulse-emergency 2s ease-in-out infinite alternate;
+  }
+  
+  .animate-shake {
+    animation: shake 0.5s ease-in-out infinite;
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@keyframes pulse-emergency {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-1px);
+  }
+  75% {
+    transform: translateX(1px);
+  }
+}
