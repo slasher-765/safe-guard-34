@@ -96,44 +96,13 @@ The application uses a custom design system built on Tailwind CSS with:
 - Protected routes based on user roles
 - Automatic logout functionality
 
-## 🌐 Deployment
-
-### Lovable Platform
-1. Visit [Lovable Project](https://lovable.dev/projects/efc15de7-450e-43eb-bdb2-522ef669345d)
-2. Click **Share** → **Publish**
-3. Your app will be deployed instantly
-
 ### Custom Domain
 1. Navigate to **Project** → **Settings** → **Domains**
 2. Click **Connect Domain**
 3. Follow the setup instructions
 
-## 📚 Documentation
-
-- [Lovable Documentation](https://docs.lovable.dev/)
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [shadcn/ui Components](https://ui.shadcn.com/)
-
-## 🤝 Contributing
-
-This project is built on the Lovable platform. To contribute:
-
-1. Use the [Lovable Editor](https://lovable.dev/projects/efc15de7-450e-43eb-bdb2-522ef669345d) for AI-assisted development
-2. Or clone locally and push changes to the connected repository
-3. All changes sync automatically between Lovable and your repository
-
 ## 📄 License
 
 This project is part of the SafeGuard Punjab initiative for educational institution safety management.
-
-## 🆘 Support
-
-For technical support or feature requests:
-- Use the Lovable platform for development assistance
-- Join the [Lovable Discord Community](https://discord.com/channels/1119885301872070706/1280461670979993613)
-- Check the [Lovable Documentation](https://docs.lovable.dev/)
-
----
 
 **Built with ❤️ for safer educational environments in Punjab**
